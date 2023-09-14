@@ -13,7 +13,6 @@
 #define STRUTIL_IMPLEMENTATION
 #include "strutil.h"
 
-
 size_t getbnum(Info **infos,size_t ninfos,char *bname);
 char *getbname(Info **infos,size_t ninfos,size_t bnum);
 void search(char *text);

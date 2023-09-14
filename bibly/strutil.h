@@ -18,6 +18,8 @@ char *unescape(char *s);
 char *strlwr(char *s);
 char *strupr(char *s);
 
+
+
 #ifdef STRUTIL_IMPLEMENTATION
 
 
@@ -52,6 +54,7 @@ void tokfree(char ***tokens,size_t *ntokens) {
     (*tokens)[i]=NULL;
   }
   free(*tokens);
+  *tokens=NULL;
   *ntokens=0;
 }
 
